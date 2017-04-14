@@ -1,0 +1,81 @@
+.btn-tahograf(){
+    white-space: nowrap !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    background-color: #005C9A !important;  
+    color: #fff !important;
+    cursor: pointer;
+	transition: background .3s;
+	font-family: 'Jura-Bold','Jura-DemiBold',sans-serif;
+	.user-select(none);
+	&:hover {
+		color: #fff !important;
+		background-color: #0289e4 !important;
+	}
+	&.glyphicon {
+		&:before {
+			font-family: 'Glyphicons Halflings';
+		}
+	}
+}
+.btn-tahograf {
+	.btn-tahograf();
+	&-slick {
+		overflow: hidden;
+		.user-select(none);
+		cursor: pointer;
+		position: relative;
+		text-align: center;
+		&:before, &:after {
+			content: attr(data-text);
+			position: absolute;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 100%;
+			height: 50%;
+			left: 0;
+			background: #005C9A;
+			color: #fff;
+			overflow: hidden;
+			transition: transform 0.3s;
+			transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+		}
+		&:before {
+			top: 0;
+			padding-top: 1em;
+		}
+		&:after {
+			bottom: 0;
+			line-height: 0;
+		}
+		> span {
+			display: block;
+			margin-left: -10px;
+			margin-right: -10px;
+			padding-left: 10px;
+			padding-right: 10px;
+			transform: scale3d(0.2, 0.2, 1);
+			opacity: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			transition: transform 0.3s, opacity 0.3s;
+			//transition: opacity 0.3s;
+			transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+		}
+		&:hover {
+			> span {
+				opacity: 1;
+				transform: scale3d(1, 1, 1);
+			}
+			&:before {
+				transform: translate3d(0, -100%, 0);
+			}
+			&:after {
+				transform: translate3d(0, 100%, 0);
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.section-glance {
+	text-align: center;
+	&-title {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	&-list {
+		display: inline-block;
+		list-style: none;
+		padding-left: 0px;
+		margin-bottom: 100px;
+		max-width: 800px;
+		&-item {
+			position: relative;
+			list-style: none;
+			vertical-align: middle;
+			display: inline-block;
+			width: 203px;
+			height: 203px;
+			padding: 10px;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 0;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+			background-image: data-uri('../images/bin/galance.svg');
+			@media(min-width:752px){
+				margin-bottom: -55px;
+			}
+			&:before {
+				position: relative;
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+				width: 0px;
+			}
+			> span {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 20px;
+				color: #fff;
+				margin-top: -35px;
+				line-height: 1;
+				font-family: 'Jura-Bold','Jura-DemiBold',sans-serif;
+			}
+		}
+	}
+}
+.teplo {
+	.section-glance {
+		&-list {
+			&-item {
+				width: 225px;
+				height: 225px;
+				margin-left: 16px;
+				margin-right: 16px;
+			}
+		}
+	}
+}

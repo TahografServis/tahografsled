@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Host: http://speed.88005500973.ru

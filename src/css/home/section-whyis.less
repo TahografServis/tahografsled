@@ -1,0 +1,42 @@
+.section-whyis {
+	.item {
+		display: table;
+		position: relative;
+		min-height: 80px;
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+		span, p {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		span {
+			font-size: 70px;
+			padding-right: 15px;
+			color: @bluecolor;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+	&-title {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	&-wrapper {
+		margin-bottom: 15px;
+		.col-lg-4 {
+			@media (min-width: 1200px) {
+				&:nth-child(3n+1) {
+					clear: left;
+				}
+			}
+		}
+	}
+	.col-xs-min-12 {
+		@media (max-width: 640px) {
+			width: 100% !important;
+		}
+	}
+}

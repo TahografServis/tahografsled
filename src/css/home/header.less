@@ -1,0 +1,47 @@
+.header {
+	.panel {
+		background-color: #ffffff;
+		&-left, &-right {
+			text-align: center;
+			padding-bottom: 7px;
+		}
+		&-left {
+			padding-top: 7px;
+			@media (min-width: 768px){
+				text-align: left;
+			}
+		}
+		&-right {
+			@media (min-width: 768px){
+				text-align: right;
+			}
+		}
+		.longtext, .phonetext {
+			&, &-description {
+				display: block;
+			}
+		}
+		.longtext {
+			font-size: 25px;
+			font-weight: bold;
+			color: @bluecolor;
+			&-description {
+				font-weight: bold;
+				font-size: 14px;
+			}
+		}
+		.phonetext {
+			color: #f00; 
+			font-weight: bold;
+			font-size: 20px;
+			&-description {
+				display: inline-block;
+				padding-left: 11px;
+				padding-right: 11px;
+				padding-top: 7px;
+				padding-bottom: 7px;
+				font-family: 'Jura-Bold','Jura-DemiBold',sans-serif;
+			}
+		}
+	}
+}

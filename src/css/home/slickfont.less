@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'TahographSlider';
+  src:  url('@{project_font}/TahographSlider.eot?obogqk');
+  src:  url('@{project_font}/TahographSlider.eot?obogqk#iefix') format('embedded-opentype'),
+    url('@{project_font}/TahographSlider.ttf?obogqk') format('truetype'),
+    url('@{project_font}/TahographSlider.woff?obogqk') format('woff'),
+    url('@{project_font}/TahographSlider.svg?obogqk#TahographSlider') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ts-"], [class*=" ts-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'TahographSlider' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ts-arow-prev {
+  &:before {
+    content: @ts-arow-prev;
+  }
+}
+.ts-arow-next {
+  &:before {
+    content: @ts-arow-next;
+  }
+}
+.ts-dot {
+  &:before {
+    content: @ts-dot;
+  }
+}
+.ts-dot-active {
+  &:before {
+    content: @ts-dot-active;
+  }
+}
+.ts-cricle {
+  &:before {
+    content: @ts-cricle;
+  }
+}

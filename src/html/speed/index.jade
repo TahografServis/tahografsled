@@ -1,0 +1,27 @@
+include ../variable
+- var title = "ОГРАНИЧИТЕЛИ СКОРОСТИ";
+- var brand = "Тахограф-Сервис";
+- var logtitle = "безопасность в движении";
+- var footerlong = "Тахографы VDO, отопители, холодильные установки.";
+- var subdomain = "speed";
+doctype html
+html(lang="ru" prefix="og: http://ogp.me/ns#")
+	include ../includes/head
+	include ../includes/speed/ograph
+	include ../includes/style
+	body.speed
+		include ../includes/speed/header
+		main.main.container-fluid
+			.row
+				.container-fluid
+					include ../includes/title
+					include ../includes/speed/section_readmore
+					include ../includes/speed/section_about
+					include ../includes/section_sertificats
+					include ../includes/speed/section_whyis
+					include ../includes/speed/section_glance
+					include ../includes/section_clients
+					include ../includes/section_maps
+		include ../includes/footer
+		include ../includes/zayavka
+		include ../includes/javascript

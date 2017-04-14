@@ -1,0 +1,39 @@
+#zayavkaform.hidden
+	.zayavkaform.container-fluid
+		.formoverlay
+		.zayavkaform-header
+			.row
+				.container-fluid
+					.col-xs-12.logotip.text-center
+						span.one #{brand}
+						span.two #{logtitle}
+					.col-xs-12.text-center
+						.zayavkaform-description
+							p.remajax Заполните форму ниже и наши менеджеры свяжутся с Вами в ближайшее время
+							.callback
+								p.remajax
+									strong ИЛИ
+								p ЗАКАЖИТЕ ЗВОНОК И МЫ ВАМ СРАЗУ ПЕРЕЗВОНИМ
+								a.callback-manager.fancybox.btn.btn-tahograf.btn-wrapper(href="javascript:;" rel="nofollow") ЗАКАЗАТЬ ЗВОНОК
+					.col-xs-12.text-center
+						.messageform
+		form.zayavkaform(action="" method="POST")
+			input(type="hidden" name="sendpost" value="sendpost")
+			label(for="username") Как к вам обращаться?
+			.input-group
+				span.input-group-addon.glyphicon.glyphicon-user
+				input#username.form-control(name="username" type="text" placeholder="Введите ваше имя")
+			label(for="userphone") Ваш номер телефона:
+			.input-group
+				span.input-group-addon.glyphicon.glyphicon-phone
+				input#userphone.form-control(name="userphone" type="text" placeholder="+7(999)999-99-99")
+			label(for="usermail") Ваш E-mail:
+			.input-group
+				span.input-group-addon.glyphicon.glyphicon-envelope
+				input#usermail.form-control(name="usermail" type="text" placeholder="E-mail")
+			label(for="usertext">Ваше сообщение:)
+			.input-group
+				span.input-group-addon.glyphicon.glyphicon-align-left
+				textarea#usertext.form-control.textarea-vertical(name="usertext" rows="3" placeholder="Текст сообщения")
+			.text-center.btn-wrapper
+				button.btn.btn-tahograf.glyphicon.glyphicon-send(type="submit") ОТПРАВИТЬ

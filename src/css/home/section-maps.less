@@ -1,0 +1,55 @@
+.section-maps {
+	margin-bottom: 40px;
+	&-title {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		@media (min-width: 992px){
+			margin-top: 75px;
+		}
+	}
+	.map {
+		width: 100%;
+		&-adres {
+			> h4, > p {
+				text-align: center;
+			}
+			>dl {
+				width: 245px;
+				margin-left: auto;
+				margin-right: auto;
+				> dt {
+					white-space: normal;
+				}
+				@media (min-width: 768px) {
+					width: 327px;
+				}
+			}
+		}
+		@media (min-width: 1160px){
+			display: table;
+			&-adres, &-wrapper {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			&-adres {
+				width: 330px;
+				padding-right: 30px;
+				> h4, > p {
+					text-align: left;
+				}
+				> dl {
+					width: 100%;
+				}
+			}
+		}
+		&-wrapper {
+			@media (max-width: 767px){
+				margin-left: -15px;
+				margin-right: -15px;
+			}
+		}
+		&-zayavka {
+			padding-bottom: 30px;
+		}
+	}
+}

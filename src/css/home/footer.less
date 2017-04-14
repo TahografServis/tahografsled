@@ -1,0 +1,48 @@
+.footer {
+	background-color: @bluecolor;
+	text-align: center;
+	color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: 'Jura-Bold','Jura-DemiBold',sans-serif;
+	&-left, &-right {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&-right {
+		.contacts {
+			span {
+				display: block;
+			}
+		}
+	}
+	&-left {
+		padding-bottom: 15px;
+	}
+	a {
+		&, &:hover {
+			color: #ffffff;
+		}
+	}
+	@media (min-width: 768px) {
+		&-table {
+			display: table;
+			width: 100%;
+			.contacts {
+				float: right;
+			}
+		}
+		&-left, &-right {
+			text-align: left;
+			display: table-cell;
+			width: 50%;
+			vertical-align: middle;
+		}
+		&-left {
+			padding-bottom: 0px;
+		}
+		&-right {
+			
+		}
+	}
+}

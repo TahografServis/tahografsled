@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.4170854271356781 0.4170873344843109 59.165829145728644 59.165829145728644" preserveAspectRatio="xMidYMid meet" style="stroke-width: 4px;">
+    <style>
+	svg {
+		fill:#2B6CA3;
+		fill-opacity:1;
+		stroke:rgba(255, 255, 255, 1);
+		stroke-width:4px;
+	}
+	svg * {
+		vector-effect:non-scaling-stroke;
+	}
+	</style>
+	<g>
+        <path d="M47 8.1H13L1 23.3l29 28.6 29-28.6L47 8.1z"></path>
+    </g>
+</svg>

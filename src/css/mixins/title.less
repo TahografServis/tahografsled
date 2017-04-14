@@ -1,0 +1,29 @@
+.title(@margin: 15px){
+	overflow: hidden;
+	> span, &:before, &:after {
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+	}
+	&:before, &:after {
+		content: '';
+		width: 50%;
+		@media (max-width: 667px){
+			display: none;
+		}
+	}
+	&:before {
+		margin-left: -50%;
+		margin-right: @margin;
+	}
+	&:after {
+		margin-left: @margin;
+		margin-right: -50%;
+	}
+}
+.line(@color: #333){
+	color: @color;
+	&:before, &:after {
+		border-bottom: 1px solid @color;
+	}
+}

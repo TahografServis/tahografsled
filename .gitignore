@@ -6,11 +6,10 @@
 /temps/**/*
 /test/**/*
 /tests/**/*
-/**/*.dll
-/**/*.ini
+/**/desktop.ini
+/**/Thumbs.db
 /src/bin/*
 /src/test/*
-/icon.ico
 /dest/**/*
 /src/php/*
 /vendor/**/*
